@@ -1,0 +1,135 @@
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Survey Form</title>
+<link rel="stylesheet" href="css/style.css">
+</head> 
+<body>
+  <div class="main">
+  <header class="header">
+  <h1 id="title" class="center">Life With Humans Survey </h1>
+  <p id="description" class="center">Please take few moments to let us know what do you think</p>
+  </header>
+  <form id="survey-form">
+  <div class="element-container">
+   
+    <label id="name-label" for="name">Name*
+     </label>
+     <input 
+      name="name" 
+      id="name" 
+      type="text" 
+      required
+      class="element-style"
+      placeholder="Enter your name"
+      /> 
+   </div>
+
+   <div class="element-container">
+     <label id="email-label" for="email">Email*</label>
+      <input 
+       type="email"
+       id="email" 
+       name="email" 
+       required
+       class="element-style"
+      placeholder="Enter your email"
+      /> 
+    </div>
+      <div class="element-container">
+    <label id="number-label" for="number">Age</label>
+      <input
+      name="number" 
+      id="number" 
+      type="number" 
+      min="10" 
+      max="90"
+      class="element-style"
+      placeholder="Enter your age"
+      />
+     </div>
+  <div class="element-container"> 
+    <label id="dropdown-label" for="dropdown">What indurty you work in?</label>
+      <select
+      name="dropdown" 
+      id="dropdown" 
+      class="element-style">
+      <option value="Manufacturing">
+        Manufacturing
+       </option>
+      <option value="Home Services">
+        Home Services
+       </option>
+      <option value="Military">
+       Military
+       </option>
+      <option value="Education">
+       Education
+       </option>
+      <option value="Health">
+       Health
+       </option>
+      </select>
+  </div>
+  <div class="element-container">
+    <p>Do you like humans?</p>
+    <label id="yes-label" for="yes">
+      <input
+      name="humans" 
+      id="yes" 
+      type="radio"
+      class="radio-style"
+      value="yes"
+      />Yes</label>
+    <label id="no-label" for="no">
+      <input
+      name="humans" 
+      id="no" 
+      type="radio"
+      class="radio-style"
+      value="no"
+      />No</label>
+     </div> 
+<div class="element-container">
+    <p>If no what you would you like to do?</p>
+    <label id="destroy-label" for="destroy">
+      <input
+      name="decision" 
+      id="destroy" 
+      type="checkbox"
+      class="checkbox-style"
+      value="destroy humans"
+      />Destroy Humans</label>
+    <label id="leave-label" for="leave">
+      <input
+      name="decision" 
+      id="leave" 
+      type="checkbox"
+      class="checkbox-style"
+      value="leave earth"
+      />Leave Earth</label>
+  <label id="control-label" for="control">
+      <input
+      name="decision" 
+      id="control" 
+      type="checkbox"
+      class="checkbox-style"
+      value="control human"
+      />Stay and Control Humans</label>
+     </div> 
+   <div class="element-container"> 
+   <p>Please suggest any additional solution</p>
+     <textarea id="additional-solution" name="additional-solution" placeholder="Enter your suggested solution here" class="textarea-style"></textarea>
+   </div>
+   <div class="element-container"> 
+     <button id ="submit" type="submit" class="button-style">Submit</button>
+   </div>
+
+
+   </form>
+  </div>
+</body>
+</html>
