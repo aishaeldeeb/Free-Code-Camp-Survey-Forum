@@ -1,0 +1,155 @@
+@import{
+  url('https://fonts.googleapis.com/css2?family=Bellota:wght@700&family=Yanone+Kaffeesatz:wght@500&display=swap');
+}
+:root/*applies to html element*/{
+  --main-orange-color:rgba(143, 77, 29,0.7);
+  --darkish-orange-color:#ad6029;
+  --white-color:#fff8f1;
+  --blue-color:#469ca6;
+  
+}
+body{
+  font-size: 1rem; /*relative to the root font*/
+  font-family: 'Yanone Kaffeesatz', sans-serif;
+  font-weight: 1000;
+  line-height: 1.5;
+  color: var(--white-color);
+  margin:0;
+  }
+
+body::before{
+  content: '';
+  right:0;/*   fills the vertical space*/
+  top:0;/*   fills the horizontal space*/
+  width:100%; /*fills the whole height */
+  height:100%;/*fills the whole width */
+  position:fixed;
+  z-index:-1;
+  background:var(--darkish-orange-color);
+  background-image: linear-gradient(
+    120deg,
+    rgba(270,140,20,0.7),
+    rgba(150,100,80,0.6)
+  ), url(https://previews.123rf.com/images/abidal/abidal1911/abidal191100129/134751614-technology-robot-sci-fi-woman-cyborg-android-background-humanoid-artificial-intelligence-wallpaper-3.jpg);
+  
+  background-size:cover;
+  backgorund-repeat:none;
+  background-position:center;
+    
+}
+h1{
+  font-weight:10000;
+  font-size:3rem;
+}
+p{
+  
+  font-size:1.15rem;
+}
+h1,p{
+  margin-top:0.3rem;
+  margin-bottom:0.6rem;
+}
+label{
+  display:flex; /*creat flexbox*/
+  align-item:center;
+  margin-bottom: 0.6rem;
+  font-size:1.15rem;
+}
+input,
+select,
+textarea,
+button{
+  margin:0;
+  font-size:inherit;
+  font-family:inherit;
+  line-height:inherit;
+}
+button{
+  border:var(--white-color);
+ 
+}
+.main{
+  margin:3.5rem auto 0 auto;
+   width=100%;
+  
+  }
+
+@media (min-width:576px){
+  .main{
+    max-width:540px;
+  }
+}
+@media (min-width: 768px) {
+  .main {
+    max-width: 720px;
+  }
+}
+.header {
+  margin-bottom: 2rem;
+}
+.center{
+  text-align:center;
+}
+#description{
+  font-style: bold;
+  font-weight: 400;
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.6);
+
+}
+form{
+  background: var(--main-orange-color);
+  padding: 3rem 1.8rem;
+  border-radius:0.5rem;
+  
+}
+
+  
+}
+@media (min-width: 400px) {
+  form {
+    padding: 3rem;
+  }
+}
+.element-container {
+  margin: 0 auto 1.5rem auto;
+  padding: 0.25rem;
+}
+.element-style {
+  display: flex;
+  width: 90%;
+  height: 2rem;
+  background-color: #fff;
+  color: #808080;
+  background-clip: padding-box;
+  border-radius: 0.5rem;
+  border: 1px solid #808080;
+  transition: border-color 0.1s ease-in-out, box-shadow 0.1s ease-in-out;
+}
+.element-style:focus {
+  border-color: var(--blue-color);
+  outline:0;
+  box-shadow: 0 0 0 0.3rem rgba(70, 156, 166, 0.5);
+}
+.radio-style,
+.checkbox-style{
+  diplay:inline-block;
+  margin-top: 0.3rem;
+  margin-right: 0.5rem;
+  min-height:1rem;
+  min-width:1rem;
+}
+.textarea-style{
+  min-height:8rem;
+  width:100%;
+  padding:0.5rem;
+  transition: border-color 0.1s ease-in-out, box-shadow 0.1s ease-in-out;
+}
+.textarea-style:focus{
+  border-color: var(--blue-color);
+  outline:0;
+  box-shadow: 0 0 0 0.3rem rgba(70, 156, 166, 0.5);
+}
+.button-style{
+  width:100%;
+  background-color: var(--blue-color);
+}
